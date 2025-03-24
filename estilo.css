@@ -1,0 +1,253 @@
+/*para llamar una class se utiliza . para llamar un id se utiliza #*/ 
+
+body{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;    
+    }
+
+p{
+font-size: 20px; /*Aumentar tamaño de letra*/
+}
+
+li{
+list-style: none;
+margin-right: 25px; /*Correr como dice a la izquierda algo*/
+}
+
+
+.menu {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; /*Aliniar elementos*/
+}
+
+ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none; /*Quitar linea de abajo que trae los vinculos y el color*/
+    color: black;
+}
+
+.titular{
+text-align: center; /*Centrar algo*/
+margin-top: 180px;
+}
+
+h1{
+font-size: 40px; /*tamaño de algo*/
+margin: 0; /*Margen validar conf12*/
+}
+
+h2{
+font-size: 25px;
+margin-bottom: 40px; /*Margen de boton*/
+}
+
+
+a{
+font-size: 14px;
+background: #c2b1a1; /*codico con exadecimal*/ 
+/*padding: 20px; espaciado interno del elemento*/
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 30px;
+padding-right: 30px;
+padding: 20px 30px 20px 30px; /*otra forma de hacerlo*/
+color: white;
+}
+
+header{ /*Fondo de todo*/
+background: url(fondo1.jpg);
+height: 100vh; /*vh tamaño total*/
+background-size: cover; /*Cuadrar la imagen*/
+background-position: center;
+}
+
+.contenedor{ /*Margen de los bordes*/
+
+    max-width: 1280px; /*Maximo de ancho*/
+    max-width: 90%; /*Compactar los elementos*/
+    margin: auto;
+}
+
+/*                        Sobre mi segunda clase                            */
+
+h3{ /*Centrar titulo o algo*/
+    text-align: center;
+    font-size: 40px; /*tamaño*/
+    font-weight: normal; /*Tipo de fuente normal, negrita con bold*/
+}
+
+.imagensobremi{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; /*Alinear o centrar cosas a la misma altura*/
+}
+
+.contenedor-parrafo-y-boton{
+   width: 50%; 
+}
+
+.contenedor-parrafo-y-boton p{ /*solo el tamaño del contenedor de esos parrafos*/
+    font-size: 20px; /*Tamaño de parrafo*/
+}
+
+.contenedor-parrafo-y-boton a{
+    margin-top: 20px;
+    display: inline-block; /*Convertir elementos de linea "Botones","Imagenes" en elementos de bloque*/
+}
+
+/*         Servicios        */
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /*Separar los servicios*/
+}
+
+.servicio{
+    width: 22%; /*Espacios en los servicios*/
+    padding: 50px 38px 50px 38px; /*50 de top. 38 de derecha 50 de boton 38 izquierda*/
+    border-radius: 10px; /*Redonder bordes*/
+    margin-bottom: 40px; /*Margen para espacio*/ 
+    color: #fff; /*Todo el contenido en blanco*/
+}
+
+/*Color de fondo de los servicios*/
+.violeta {
+    background: #5055df;
+}
+
+.celeste{
+    background: #40a8fa;
+}
+
+.servicio h4 { /*Aumentar tamaño de letra solo los h4 del contenedor servicios*/
+    font-size: 30px;
+    margin: 0px;
+}
+
+.servicio img{
+    float:right; /*Correr imagen a la derecha*/
+}
+
+.servicio p{
+    font-size: 18px;
+    height: 200px; /*Dejar el texto fijo para que no se mueva las imagenes*/
+}
+
+ /*https://owlcarousel2.github.io/OwlCarousel2*/
+
+
+span{ /*Tamaño y color de flechaz*/
+    font-size: 80px;
+    color: blue; 
+} 
+
+.owl-nav {
+    text-align: center; /*Centrar flechaz*/
+}
+
+/*Que esperas*/
+
+#que-esperas{
+    background: #40a8fa;
+    text-align: center; /*Centrar todo*/
+    padding: 50px 0 50px 0;
+}
+
+#que-esperas h3{
+    font-size: 23px;
+    color: #00c445;
+    margin-bottom: 40px;
+}
+ 
+#que-esperas a{
+    padding: 20px 45px 15px 45px; /*Alargar boton*/
+}
+
+#que-esperas a:hover { /*Modificar si paso por encima del boton*/
+    color: black;
+    transition: 1s; /*Mas sutil la transicion del color*/
+    transform: scale(1.4); /*Efecto de agrandar boton*/
+    display: inline-block;
+}
+
+/*Whata*/
+
+#whatsapp a{
+    background: none; /*Quitar color*/
+    position: fixed; /*Posicion Fija*/
+    top: 85%; /*Altura solo con position: fixer*/
+    right: 1%; /*Izquierda*/
+}
+
+/*estilos para celulares cuando el maximo de ancho sea de 480px*/
+
+@media (max-width: 480px) {
+    nav {
+        position: absolute; /*Posicion fija*/
+        top: 50px;
+        left: 0px; 
+    }
+    nav .ul{
+        flex-direction: column;
+        display: flex; /*Elementos en fila uno abajo del otro*/
+    }
+
+}
+
+/*Formulario*/
+
+.formulario-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.formulario-seccion .formulario-lado {
+    flex: 1;
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}

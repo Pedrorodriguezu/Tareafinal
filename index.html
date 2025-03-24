@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+    <head>
+    <meta charset="utf-8"/>
+    <title> Pedro Rodriguezu - estudiante </title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css"> <!--/*https://owlcarousel2.github.io/OwlCarousel2/*-->
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <!--https://cdnjs.com/libraries/font-awesome para iconos-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"> 
+    </script>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no"> <!--para poder ver en dispotivios y quitar el zoom-->
+    </head>
+
+<body>
+<header>
+    <div class="contenedor"> 
+        <div class="menu">    
+            <p> Hotel CUN </p>
+
+            <nav> <!--menu de navegacion-->
+                <!--<ol> lista ordenada-->
+                <ul>
+                    <li> Alojamientos </li> <!--lista-->
+                    <li>Reservas</li>
+                    <li>Eventos</li>
+                    <li>Experiencias</li>
+                </ul>
+            </nav>  
+        </div> <!--Contener elemenos para ser manipulados en CSS-->
+    </div>     
+    <div class="titular">
+        
+        <h1>Reserva con nosotros</h1>
+        <h2> </h2> <!--<a href=''a\> para botones-->
+        <a href="#hoteles" 
+        target="_blank">INGRESA</a><!--target="_blank" abrir vinculo--> 
+
+        </div>
+</header>
+
+<!--Quienes somos -->
+
+<section>
+
+    <h3>¿Quienes somos?</h3>
+    <div class="imagensobremi">
+        <img src="Inicio hotel.jpg" width="300" title="Hotel1" alt="Pedro Rodriguez"> <!--para agregar imagenes directo a HTML y ancho de la imagen-->
+            <div class="contenedor-parrafo-y-boton">
+            <p>Somos la mejor opción para que disfrutes tus vacaciones soñadas en nuestras manos. Contamos con varias opciones de hoteles y hospedajes en las mejores zonas. Ofrecemos una variedad de habitaciones, desde sencillas hasta suites de lujo, y siempre a los mejores precios. ¿Qué esperas? ¡Reserva con Hoteles CUN!</p>
+            <a href="">Conoce mas de nosotros</a>
+            </div>    
+    </div>    
+</section>
+
+
+<section>
+
+    <div class="contenedor">
+        <h3> servicios</h3>
+        <div class="contenedor-servicios">
+            <div class="servicio violeta">
+                <h4>Recepción 24 horas</h4>
+                <p>Un servicio de recepción disponible las 24 horas del día es crucial para atender cualquier necesidad o emergencia de los huéspedes a cualquier hora.</p>
+                <img src="Recepcion2.jpg" alt="centered imagen--" width="280px" >
+            </div>    
+        
+            <div class="servicio celeste">
+                <h4>Conexión wifi-gratuitan</h4>
+                <p> Contamos con una buena conexión Wifi es fundamental, ya sea para trabajar, mantenerse en contacto con familiares o simplemente disfrutar de cualquier entretenimiento en línea.</p>
+                <img src="Wifi2.jpg" alt="centered imaganes" width="280px">
+            </div>   
+            
+            <div class="servicio violeta">
+                <h4>Desayuno incluido</h4>
+                <p>Ofrocesmos desayuno de calidad, saludables para toda la familia y una gran cantidad de variedad de alimentos para su selección</p>
+                <img src="Desayuno.jpg" width="280 px">
+            </div>   
+
+            <div class="servicio celeste">
+                <h4>Seguridad</h4>
+                <p>Sistemas de seguridad efectivos, como cámaras de vigilancia y personal de seguridad, son esenciales para brindar tranquilidad a nuestros huéspedes. Eso sí, siempre garantizándoles la máxima privacidad.</p>
+                <img src="Seguridad.jpg" width="270 px">
+            </div>
+            
+            <div class="servicio violeta">
+                <h4>Valet parking</h4>
+                <p>Contamos con servicio de parqueo en todas nuestros hoteles para que usted pueda dejar estacionar y vehiculo y poder entregarselo de la manera mas rapida y eficiente posible</p>
+                <img src="Valet.jpg" width="270 px">
+            </div>
+            
+            <div class="servicio celeste">
+                <h4>petfriendly</h4>
+                <p>Contamos con espacios adecudos para el mas consentido de la familia, tu animalito contara con todas las comodidades necesarias para estar dentro de las instalaciones</p>
+                <img src="Petf.jpg" width="270 px">
+            </div>
+        
+        </div>
+    </div>
+
+</section>
+
+<section id="hoteles">
+    <div class="contenedor1">
+        <h3>Hoteles</h3>
+        <!-- Set up your HTML -->
+        <div class="owl-carousel">
+        <div> <img src="Hotel1.jpg"></div>
+        <div> <img src="Hotel2.jpg"></div>
+        <div> <img src="Hotel3.jpg"></div>
+        <div> <img src="Hotel4.jpg"></div>
+        <div> <img src="Hotel6.jpg"></div>
+        </div>
+
+    </div>
+</section>
+
+    <section id="que-esperas">
+        <div class="contenedor">
+            <a href="https://web.whatsapp.com/">Charlemos</a>
+        </div>
+
+    </section>
+    <!--What-->
+    
+    <section id="whatsapp">
+    <a href="https://web.whatsapp.com/">
+        <img src="whatsapp.png">
+    </a>
+    </section>
+
+
+<!--Formulario-->
+<section class="formulario-seccion">
+    <div class="formulario-lado">
+        <form action="procesar_reserva.php" method="post">
+            <div>
+                <label for="numero-documento">Número de Documento de Identidad:</label>
+                <input type="text" id="numero-documento" name="numero-documento" required>
+            </div>
+
+            <div>
+                <label for="tipo-documento">Tipo de Documento:</label>
+                <select id="tipo-documento" name="tipo-documento" required>
+                    <option value="" disabled selected>Selecciona el tipo de documento</option>
+                    <option value="cc">Cédula de ciudadanía</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="ce">Cédula de extranjería</option>
+                    <option value="pasaporte">Pasaporte</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>    
+
+            <div>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+            </div>
+
+            <div>
+                <label for="fecha-reserva">Fecha de Reserva:</label>
+                <input type="date" id="fecha-reserva" name="fecha-reserva" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="mensaje-reserva"></div>
+
+        <script>
+            document.querySelector("form").addEventListener("submit", function(event) {
+                event.preventDefault();
+            
+                let formData = new FormData(this);
+            
+                fetch("procesar_reserva.php", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("mensaje-reserva").innerHTML = `<p style="color:green;">Reserva realizada con éxito</p>`;
+                    this.reset(); 
+                })
+                .catch(error => {
+                    document.getElementById("mensaje-reserva").innerHTML = `<p style="color:red;">Error al enviar la reserva</p>`;
+                });
+            });
+            </script>
+            
+    </div>
+</section>
+
+ 
+</section>
+
+    <!--Jqury carusel: https://jquery.com/download/-->
+
+    <script src="owlcarousel/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1 
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    </script> <!--primera cantidad de imagenes en computadora, 2 cantidad de imagenes en celular, 3 cantidad de imaganes en computadoras-->
+
+</body>
+</html>
